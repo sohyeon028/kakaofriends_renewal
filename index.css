@@ -1,0 +1,519 @@
+*{
+    cursor: url('images/춘식이\ 얼굴.png') 16 16, auto; /* (16,16)은 커서 클릭 포인트 위치 */
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.header-top {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img { /*카카오프렌즈 로고*/
+    height: 40px;
+    cursor: pointer;
+}
+
+.util-menu ul { /*검색, 배송, 장바구니 아이콘 이미지*/
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.util-menu img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.main-nav {
+    border-top: 1px solid #eee;
+}
+
+.main-nav ul {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav li a { /*네비게이션 카테고리바*/
+    cursor: pointer;
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.main-nav li a:hover {
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.sub-menu ul { /*하부 카테고리 내용*/
+    cursor: pointer;
+    display: block;
+    padding: 10px 0;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-menu li a {
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sub-menu li a:hover {
+    background-color: #f8f8f8;
+    color: #000;
+}
+
+/* 호버 시 서브메뉴 표시 */
+.main-nav li:hover .sub-menu {
+    display: block;
+}
+
+
+
+/*프로모션 배너 설정*/
+.promotion-banner {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-container {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.banner-slide {
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+}
+
+.banner-slide img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.banner-controls {
+    cursor: pointer;
+    width: auto; /* 더 이상 100% 필요 없음 */
+    position: absolute;
+    bottom: 10px; /* 가운데 아래로 이동 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 80px; /* 버튼과 페이지네이션 간 거리 */
+    z-index: 10;
+}
+
+.banner-pagination {
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.banner-pagination span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.banner-pagination span.active {
+    background-color: #fff;
+}
+
+.prev-btn, .next-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.prev-btn::before, .next-btn::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    display: block;
+}
+
+.prev-btn::before {
+    transform: rotate(-135deg);
+    margin-left: 5px;
+}
+
+.next-btn::before {
+    transform: rotate(45deg);
+    margin-right: 5px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+/*콜라보 기획*/
+.editor-recommendation {
+    text-align: center;
+    padding: 30px 50px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 1200px; /* 한 번에 3개씩 보여줄 크기 */
+    margin: 0 auto;
+    padding-bottom: 40px; /*버튼 들어갈 공간*/
+}
+
+.slider {
+    cursor: pointer;
+    overflow: hidden;
+    width: 1100px; /* (한 줄에 3개) */
+    /* background-color: aqua; */
+}
+
+.slides {
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 25px;
+}
+
+.slide {
+    cursor: pointer;
+    min-width: 350px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: -16px;
+    /* background-color: #9b59b6; */
+}
+
+.slide h3 {
+    cursor: pointer;
+    margin: 5px 0 2px 15px; /* top, right, bottom, left */
+}
+
+.slide p{
+    cursor: pointer;
+    margin: 2px 0 20px 15px; /* top, right, bottom, left */
+    font-size: 13.5px;
+}
+
+.slide img {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.slide-btn {
+    position: absolute;
+    bottom: 0; /* 하단 정렬 */
+    top: auto; /* 기존 중앙 정렬 제거 */
+    transform: none; /* 기존 translateY 제거 */
+    background-color: rgba(238, 236, 236, 0.699);
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.prev {
+    left: 46%;
+}
+
+.next {
+    right: 46%;
+}
+
+
+
+
+
+
+
+/*신상품*/
+.new-arrival {
+    text-align: center;
+    padding: 50px;
+    position: relative; /* 버튼 위치 기준 잡기  */
+    padding-bottom: 50px; /* 버튼 공간 확보 */
+}
+
+.new-slides {
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 25px;
+}
+
+.new-arrival .slide {
+    cursor: pointer;
+    min-width: 350px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.new-arrival .slide img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.new-prev {
+    left: 46%;
+}
+
+.new-next {
+    right: 46%;
+}
+
+.tag {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1px 4px;
+    margin: 2px 0 0 15px; /* top, right, bottom, left */
+}
+
+.Best { color: #ffba27;}
+.new { color: #ff2f00; }
+
+
+
+
+/*특정 캐릭터 카테고리*/
+.character-category {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.character-category h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.character-item {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.character-item:hover {
+    transform: translateY(-5px);
+}
+
+.character-item img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.character-item:hover img {
+    transform: scale(1.05);
+}
+
+.character-item p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* 반응형 디자인 */
+@media screen and (max-width: 768px) {
+    .character-grid {
+        gap: 15px;
+    }
+    
+    .character-item {
+        width: 100px;
+    }
+    
+    .character-item img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+
+
+/* 자사 상품 */
+.our-products {
+    text-align: center;
+    padding: 50px;
+}
+
+.our-slides {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 25px;
+}
+
+.our-products .slide {
+    min-width: 350px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.our-products .slide img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.our-prev {
+    left: 46%;
+}
+
+.our-next {
+    right: 46%;
+}
+
+
+
+
+
+
+
+
+
+
+/*푸터 스타일링*/
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.company-info h3,
+.customer-service h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #3c1e1e;
+}
+
+.company-info p,
+.customer-service p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #999;
+    font-size: 0.8rem;
+}

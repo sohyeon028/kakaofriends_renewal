@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="products_ryan.css" />
+    <script src="index.css"></script>
+    <title>튜브 상품 페이지</title>
+  </head>
+  <body>
+    <header>
+      <!-- 상단 헤더 영역: 로고와 유틸리티 메뉴 포함 -->
+      <div class="header-top">
+        <!-- 로고 영역 -->
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/카카오프렌즈 로고(png).png"
+              alt="카카오프렌즈 로고"
+            />
+          </a>
+        </div>
+
+        <!-- 유틸리티 메뉴: 검색, 배송조회, 장바구니 아이콘 -->
+        <div class="util-menu">
+          <ul>
+            <li>
+              <a href="#search.html"
+                ><img src="images/검색 아이콘(돋보기 모양).png" alt="검색"
+              /></a>
+            </li>
+            <li>
+              <a href="#delivery.html"
+                ><img src="images/배송 아이콘(트럭 모양).png" alt="배송조회"
+              /></a>
+            </li>
+            <li>
+              <a href="#cart.html"
+                ><img
+                  src="images/장바구니 아이콘(카트 모양).png"
+                  alt="장바구니"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 메인 네비게이션: 주요 카테고리 메뉴 -->
+      <nav class="main-nav">
+        <!-- 각 메뉴 항목과 해당하는 서브메뉴 -->
+        <ul>
+          <!-- 전체상품 카테고리와 서브메뉴 -->
+          <li>
+            <a href="#전체상품">전체상품</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#신상품">신상품</a></li>
+                <li><a href="#문구">문구</a></li>
+                <li><a href="#리빙">리빙</a></li>
+                <li><a href="#잡화">잡화</a></li>
+                <li><a href="#의류">의류</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#인기상품">인기상품</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#베스트">베스트</a></li>
+                <li><a href="#신상품">신상품</a></li>
+                <li><a href="#추천상품">추천상품</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#시즌상품">시즌상품</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#여름시즌">여름시즌</a></li>
+                <li><a href="#휴가시즌">휴가시즌</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#기획전">기획전</a></li>
+          <li><a href="#공지사항">공지사항</a></li>
+
+          <li>
+            <a href="#카카오프렌즈 캐릭터별 상품">캐릭터별 상품</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="products_neo.html">네오</a></li>
+                <li><a href="products_ryan.html">라이언</a></li>
+                <li><a href="products_muzi.html">무지</a></li>
+                <li><a href="products_jay-G.html">제이지</a></li>
+                <li><a href="products_choonsik.html">춘식이</a></li>
+                <li><a href="products_apeach.html">어피치</a></li>
+                <li><a href="products_tube.html">튜브</a></li>
+                <li><a href="products_frodo.html">프로도</a></li>
+                <li><a href="products_con.html">콘</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="characters.html">카카오프렌즈</a>
+            <div class="sub-menu">
+              <!--<ul>
+                    <li><a href="#카카오프렌즈 캐릭터 소개">카카오프렌즈 캐릭터 소개</a></li>
+                    </ul>-->
+            </div>
+          </li>
+          <li>
+            <a href="#고객센터">고객센터</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#공지사항">공지사항</a></li>
+                <li><a href="#문의하기">문의하기</a></li>
+                <li><a href="#챗봇상담하기">챗봇 상담하기</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <div class="character-buttons">
+      <a href="products_neo.html" class="character-button">
+        <img src="images_category/네오.jpg" alt="네오">
+        <span>네오</span>
+      </a>
+      <a href="products_ryan.html" class="character-button">
+        <img src="images_category/라이언.jpg" alt="라이언">
+        <span>라이언</span>
+      </a>
+      <a href="products_muzi.html" class="character-button">
+        <img src="images_category/무지.jpg" alt="무지">
+        <span>무지</span>
+      </a>
+      <a href="products_jay-G.html" class="character-button">
+        <img src="images_category/제이지.jpg" alt="제이지">
+        <span>제이지</span>
+      </a>
+      <a href="products_choonsik.html" class="character-button">
+        <img src="images_category/춘식이.jpg" alt="춘식이">
+        <span>춘식이</span>
+      </a>
+      <a href="products_apeach.html" class="character-button">
+        <img src="images_category/어피치.jpg" alt="어피치">
+        <span>어피치</span>
+      </a>
+      <a href="products_tube.html" class="character-button">
+        <img src="images_category/튜브.jpg" alt="튜브">
+        <span>튜브</span>
+      </a>
+      <a href="products_frodo.html" class="character-button">
+        <img src="images_category/프로도.jpg" alt="프로도">
+        <span>프로도</span>
+      </a>
+      <a href="products_con.html" class="character-button">
+        <img src="images_category/콘.jpg" alt="콘">
+        <span>콘</span>
+      </a>
+    </div>
+
+
+    
+    <div class="product-page">
+      
+      <!-- 전체 페이지를 감싸는 컨테이너: 좌측 필터 + 우측 상품 목록 -->
+
+      <!-- 🔹 사이드 필터 영역 -->
+      <aside class="filter-sidebar">
+        <h2>튜브</h2>
+        <h3>카테고리</h3>
+        <ul>
+          <li><input type="checkbox" /> 인형</li>
+          <li><input type="checkbox" /> 키링</li>
+          <li><input type="checkbox" /> 문구</li>
+          <li><input type="checkbox" /> 생활용품</li>
+        </ul>
+
+        <h3>별점</h3>
+        <ul>
+          <li><input type="checkbox" /> ★ 10개+</li>
+          <li><input type="checkbox" /> ★ 30개+</li>
+          <li><input type="checkbox" /> ★ 50개+</li>
+          <li><input type="checkbox" /> ★ 100개+</li>
+        </ul>
+
+        <h3>가격</h3>
+        <ul>
+          <li><input type="checkbox" /> 0원~5천원</li>
+          <li><input type="checkbox" /> 5천원~1만원</li>
+          <li><input type="checkbox" /> 1만원~5만원</li>
+          <li><input type="checkbox" /> 5만원~10만원</li>
+          <li><input type="checkbox" /> 10만원 이상</li>
+        </ul>
+      </aside>
+
+    
+
+      <!-- 🔹 상품 리스트 영역 -->
+      <section class="product-grid">
+        
+        
+
+
+        <!-- 🔸 상품 첫째줄 -->
+        <div class="product-item">
+          <img
+            src="images_products_tube/1.FRIENDZOO 코끼리 인형_리틀튜브_28,000.jpeg"
+            alt="상품1"
+          />
+          <!-- 상품 이미지 -->
+          <div class="product-info">
+            <p class="title">FRIENDZOO 코끼리 인형 리틀 튜브</p>
+            <!-- 상품 이름 -->
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">28,000원</span>
+              <!-- 원래 가격 -->
+            </p>
+            <p class="rating">★리뷰 (13)</p>
+            <!-- 별점 + 리뷰 수 -->
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img
+            src="images_products_tube/2.FRIENDZOO 코끼리 키링인형_리틀튜브_14,000.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">FRIENDZOO 코끼리 키링 인형 리틀 튜브</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">14,000원</span>
+            </p>
+            <p class="rating">★리뷰 (12)</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img
+            src="images_products_tube/3.포슬인형 코스튬_리틀 튜브 백팩_7,900.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">포슬 인형 코스튬 리틀 튜브</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">7,900원</span>
+            </p>
+            <p class="rating">★리뷰 (17)</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img
+            src="images_products_tube/4.베이비드리밍 키링인형_리틀튜브_14,000.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">베이비 드리밍 키링 인형</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">14,000원</span>
+            </p>
+            <p class="rating">★리뷰 (23)</p>
+          </div>
+        </div>
+
+        <!-- 🔸 상품 둘째줄 -->
+        <div class="product-item">
+          <img
+            src="images_products_tube/5.프로스펙스X프렌즈 자전거 인형키링_튜브_20,000.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">프로스펙스X프렌즈 자전거 인형 키링</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">20,000원</span>
+            </p>
+            <p class="rating">★리뷰 (15)</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img
+            src="images_products_tube/6.프로스펙스X프렌즈 자전거 스티커팩_튜브_3,000.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">프로스펙스X프렌즈 자전거 스티커팩</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">3,000원</span>
+            </p>
+            <p class="rating">★리뷰 (2)</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img
+            src="images_products_tube/7.트윙클스타 스탠딩 자석판 인형_리틀튜브_18,000.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">트윙클스타 스탠딩 자석판 인형</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">18,000원</span>
+            </p>
+            <p class="rating">★리뷰 (11)</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img
+            src="images_products_tube/8.오늘부터갓생 미니피규어 환경_튜브_13,000.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">오늘부터갓생 미니 피규어 환경</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">13,000원</span>
+            </p>
+            <p class="rating">★리뷰 (23)</p>
+          </div>
+        </div>
+        
+        <div class="product-item">
+          <img
+            src="images_products_tube/9.볼 발그레 포슬 키링인형_리틀튜브_9,000.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">볼 발그레 포슬 키링 인형</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">9,000원</span>
+            </p>
+            <p class="rating">★리뷰 (36)</p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <img
+            src="images_products_tube/10.해피 가드닝_인형_튜브_27,000.jpeg"
+            alt="상품1"
+          />
+          <div class="product-info">
+            <p class="title">해피 가드닝 인형</p>
+            <p class="price">
+              <!--<span class="sale">14,000원</span>  할인 가격 -->
+              <span class="original">27,000원</span>
+            </p>
+            <p class="rating">★리뷰 (20)</p>
+          </div>
+        </div>
+
+      </section>
+    </div>
+    <!-- 더보기 버튼 -->
+    <section id="productGrid" class="product-grid"></section>
+    <div class="load-more-container">
+      <button id="loadMoreBtn">상품 더보기</button>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="company-info">
+          <h3>(주)카카오</h3>
+          <p>주소: 제주특별자치도 제주시 첨단로 242</p>
+          <p>사업자등록번호: 120-81-47521</p>
+          <p>통신판매업신고번호: 제2015-제주아라-0032호</p>
+          <p>대표이사: 정신아</p>
+        </div>
+        <div class="customer-service">
+          <h3>고객센터</h3>
+          <p>1544-5664 (통화료 발생)</p>
+          <p>평일 09:00 - 18:00 (점심시간 12:00~13:00)</p>
+          <p>토/일, 공휴일 휴무</p>
+          <p>카카오톡: @카카오프렌즈</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Kakao Corp. All rights reserved.</p>
+        <p>
+          (주)카카오에서 판매하는 상품 중에는 개별판매자가 판매하는 상품이
+          포함되어 있습니다.
+        </p>
+        <p>
+          개별판매자가 판매하는 상품에 대해 (주)카카오는 통신중개판매업자로서
+          통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한
+          의무와 책임은 각 판매자에게 있습니다.
+        </p>
+      </div>
+    </footer>
+
+    
+  </body>
+</html>

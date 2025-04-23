@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="kakao.js"></script>
+    <title>kakaofriends</title>
+  </head>
+  <body>
+    <header>
+      <!-- 상단 헤더 영역: 로고와 유틸리티 메뉴 포함 -->
+      <div class="header-top">
+        <!-- 로고 영역 -->
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="images/카카오프렌즈 로고(png).png"
+              alt="카카오프렌즈 로고"
+            />
+          </a>
+        </div>
+
+        <!-- 유틸리티 메뉴: 검색, 배송조회, 장바구니 아이콘 -->
+        <div class="util-menu">
+          <ul>
+            <li>
+              <a href="#search.html"
+                ><img src="images/검색 아이콘(돋보기 모양).png" alt="검색"
+              /></a>
+            </li>
+            <li>
+              <a href="#delivery.html"
+                ><img src="images/배송 아이콘(트럭 모양).png" alt="배송조회"
+              /></a>
+            </li>
+            <li>
+              <a href="#cart.html"
+                ><img
+                  src="images/장바구니 아이콘(카트 모양).png"
+                  alt="장바구니"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 메인 네비게이션: 주요 카테고리 메뉴 -->
+      <nav class="main-nav">
+        <!-- 각 메뉴 항목과 해당하는 서브메뉴 -->
+        <ul>
+          <!-- 전체상품 카테고리와 서브메뉴 -->
+          <li>
+            <a href="#전체상품">전체상품</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#신상품">신상품</a></li>
+                <li><a href="#문구">문구</a></li>
+                <li><a href="#리빙">리빙</a></li>
+                <li><a href="#잡화">잡화</a></li>
+                <li><a href="#의류">의류</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#인기상품">인기상품</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#베스트">베스트</a></li>
+                <li><a href="#신상품">신상품</a></li>
+                <li><a href="#추천상품">추천상품</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#시즌상품">시즌상품</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#여름시즌">여름시즌</a></li>
+                <li><a href="#휴가시즌">휴가시즌</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#기획전">기획전</a></li>
+          <li><a href="#공지사항">공지사항</a></li>
+
+          <li>
+            <a href="#카카오프렌즈 캐릭터별 상품">캐릭터별 상품</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="products_neo.html">네오</a></li>
+                <li><a href="products_ryan.html">라이언</a></li>
+                <li><a href="products_muzi.html">무지</a></li>
+                <li><a href="products_jay-G.html">제이지</a></li>
+                <li><a href="products_choonsik.html">춘식이</a></li>
+                <li><a href="products_apeach.html">어피치</a></li>
+                <li><a href="products_tube.html">튜브</a></li>
+                <li><a href="products_frodo.html">프로도</a></li>
+                <li><a href="products_con.html">콘</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="characters.html">카카오프렌즈</a>
+            <div class="sub-menu">
+              <!--<ul>
+                    <li><a href="#카카오프렌즈 캐릭터 소개">카카오프렌즈 캐릭터 소개</a></li>
+                    </ul>-->
+            </div>
+          </li>
+          <li>
+            <a href="#고객센터">고객센터</a>
+            <div class="sub-menu">
+              <ul>
+                <li><a href="#공지사항">공지사항</a></li>
+                <li><a href="#문의하기">문의하기</a></li>
+                <li><a href="#챗봇상담하기">챗봇 상담하기</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    
+
+    <!-- 프로모션 배너 섹션: 메인 슬라이더 -->
+    <section class="promotion-banner">
+      <!-- 배너 이미지 컨테이너 -->
+      <div class="banner-container">
+        <!-- 개별 배너 슬라이드 -->
+        <div class="banner-slide">
+          <img src="images/프로모션 배너 이미지1.jpg" alt="프로모션 배너 1" />
+        </div>
+
+        <div class="banner-slide">
+          <img src="images/프로모션 배너 이미지2.jpg" alt="프로모션 배너 2" />
+        </div>
+
+        <div class="banner-slide">
+          <a
+            href="https://youtu.be/Gqlq5Hyx8NM?si=uWkI_SQ3Jrt-N_vr"
+            target="_blank"
+          >
+            <img
+              src="images/프로모션 배너 이미지6_도도도 춘식이 영상 캡처.jpg"
+              alt="프로모션 배너 3"
+            />
+          </a>
+        </div>
+      </div>
+      <!-- 배너 컨트롤: 이전/다음 버튼 -->
+      <div class="banner-controls">
+        <button class="prev-btn" aria-label="이전 슬라이드"></button>
+        <button class="next-btn" aria-label="다음 슬라이드"></button>
+      </div>
+      <!-- 배너 페이지네이션: 현재 슬라이드 위치 표시 -->
+      <div class="banner-pagination">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </section>
+
+    <!--콜라보 기획 상품-->
+    <div class="editor-recommendation">
+      <h2>오직 카카오프렌즈에서만 구매할 수 있는 콜라보 기획 상품!</h2>
+      <div class="slider-container">
+        <button class="slide-btn prev">&lt;</button>
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <img
+                src="images_collabo/프로스펙스X춘식이 야구 유니폼 캐주얼.jpg"
+                alt="MD's Pick"
+              />
+              <h3>프로스펙스X춘식이 야구 유니폼 캐주얼</h3>
+              <p>★★MD팀 만장일치 추천 상품★★</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/프로스펙스X어피치 레슬링 인형 키링.jpeg"
+                alt="패턴 컬렉션"
+              />
+              <h3>프로스펙스X어피치 레슬링 인형 키링</h3>
+              <p>해맑게 웃으며 이두를 어필하는 어피치!</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/프로스펙스X프로토 럭비 인형 키링.jpeg"
+                alt="피크닉 감성"
+              />
+              <h3>프로스펙스X프로토 럭비 인형 키링</h3>
+              <p>"나보다 럭비를 잘한다고? 우습네!"</p>
+            </div>
+
+            <div class="slide">
+              <img
+                src="images_collabo/오징어 게임X카카오프렌즈 티셔츠.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>오징어 게임X카카오프렌즈 티셔츠</h3>
+              <p>이거 입으면 나도 456번 참가자가 될 수 있는 건가?</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/오징어 게임X춘식이 LED 키링.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>오징어 게임X춘식이 LED 키링</h3>
+              <p>춘식이 눈이 대신 말하는 "무궁화 꽃이 피었습니다"</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/오징어 게임X춘식이 관절인형.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>오징어 게임X춘식이 관절인형</h3>
+              <p>
+                오징어 게임 참가자와 영희 의상을 입은 춘식이! <br />
+                관절도 움직인다고?
+              </p>
+            </div>
+
+            <div class="slide">
+              <img
+                src="images_collabo/톰과 제리X어피치 젤펜(톰).jpeg"
+                alt="추가 이미지"
+              />
+              <h3>톰과 제리X어피치 젤펜</h3>
+              <p>톰이 되어버린 어피치! 부드러운 젤펜</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/톰과 제리X춘식이 컵 피규어(터피).jpeg"
+                alt="추가 이미지"
+              />
+              <h3>톰과 제리X춘식이 컵 피규어</h3>
+              <p>터피의 코스튬을 입은 춘식이가 빙글빙글~</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/톰과 제리X라이언&춘식이 차량방향제.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>톰과 제리X라이언&춘식이 차량방향제</h3>
+              <p>제리와 터피가 되어버린 라이언과 춘식이! 향기가 솔솔난다~</p>
+            </div>
+
+            <div class="slide">
+              <img
+                src="images_collabo/해리포터X라이언 포슬 키링 인형(리틀 라이언).jpeg"
+                alt="추가 이미지"
+              />
+              <h3>해리포터X라이언 포슬 키링 인형</h3>
+              <p>포슬~ 포슬~ 부드러운 라이언 인형과 해리포터의 콜라보!</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/해리포터X춘식이 중형 인형.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>해리포터X춘식이 중형 인형</h3>
+              <p>해리포터가 된 춘식이?!</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/해리포터X라이언&춘식이 담요.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>해리포터X라이언&춘식이 담요</h3>
+              <p>해리포터와 라이언&춘식이가 그려진 담요라 더욱 따뜻해~</p>
+            </div>
+
+            <div class="slide">
+              <img
+                src="images_collabo/먼작귀X카카오프렌즈 데코스티커.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>먼작귀X카카오프렌즈 데코스티커</h3>
+              <p>귀여운 친구들만 모았다! 품절 임박!!</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/먼작귀X카카오프렌즈 미니시계.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>먼작귀X카카오프렌즈 미니시계</h3>
+              <p>째깍.. 째깍.. 치이카와와 춘식이가 시간을 알려줘요!</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_collabo/먼작귀X카카오프렌즈 투명우산.jpeg"
+                alt="추가 이미지"
+              />
+              <h3>먼작귀X카카오프렌즈 투명우산</h3>
+              <p>비가 와 어두운 날에도 나는 내 최애 보며 걷는다~</p>
+            </div>
+          </div>
+        </div>
+        <button class="slide-btn next">&gt;</button>
+      </div>
+    </div>
+
+    <!--신상품-->
+    <div class="new-arrival">
+      <h2>새로운 상품과 프렌즈들이 선택한 Best 상품!</h2>
+      <div class="slider-container">
+        <button class="slide-btn new-prev">&lt;</button>
+        <div class="slider">
+          <div class="new-slides">
+            <div class="slide">
+              <img
+                src="images_new, best/new_냥냥 스마트키 자석 보관함_춘식이.jpeg"
+                alt="신상품 1"
+              />
+              <span class="tag new">New</span>
+              <h3>냥냥 스마트키 자석 보관함 춘식이</h3>
+              <p>
+                나만 없어 고양이.. 하지만 고양이가 된 춘식이 키 보관함은 있지롱!
+              </p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_new, best/new_전자레인지 클리너_춘식이.jpeg"
+                alt="신상품 2"
+              />
+              <span class="tag new">New</span>
+              <h3>전자레인지 클리너춘식이</h3>
+              <p>춘식아! 깨끗한 전자레인지를 부탁해!</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_new, best/new_포슬인형 코스튬_벚꽃놀이.jpeg"
+                alt="신상품 3"
+              />
+              <span class="tag new">New</span>
+              <h3>포슬인형 코스튬 벚꽃놀이</h3>
+              <p>이번 벚꽃놀이는 사랑스러운 춘식이와 함께해요~</p>
+            </div>
+
+            <div class="slide">
+              <img
+                src="images_new, best/best_FRIENDZOO 판다 인형_리틀어피치.jpeg"
+                alt="베스트1"
+              />
+              <span class="tag Best">Bset</span>
+              <h3>FRIENDZOO 판다 인형 리틀어피치</h3>
+              <p>어피치에게서 판다의 모습이 보여...</p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_new, best/best_문어 칫솔홀더_춘식이.jpeg"
+                alt="베스트1"
+              />
+              <span class="tag Best">Bset</span>
+              <h3>문어 칫솔홀더 춘식이</h3>
+              <p>
+                쓱싹쓱싹 문어가 된 춘식이 칫솔 홀더 덕분에 치아가 더
+                반짝반짝해지는 이 기분~
+              </p>
+            </div>
+            <div class="slide">
+              <img
+                src="images_new, best/best_먼작귀X카카오프렌즈 키링인형 토끼_춘식이.jpeg"
+                alt="베스트1"
+              />
+              <span class="tag Best">Bset</span>
+              <h3>먼작귀X카카오프렌즈 키링인형 토끼 춘식이</h3>
+              <p>
+                먼작귀 코스튬을 입은 춘식이를 가방에 걸고 다니면 얼마나
+                귀엽게요~
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="slide-btn new-next">&gt;</button>
+      </div>
+    </div>
+
+    <section class="character-category">
+      <h2>좋아하는 프렌즈는?</h2>
+
+
+
+      <div class="character-grid">
+        <a href="products_neo.html" class="character-item">
+          <img src="images_category/네오.jpg" alt="네오" />
+          <p>네오</p>
+        </a>
+        <a href="products_ryan.html" class="character-item">
+          <img src="images_category/라이언.jpg" alt="라이언" />
+          <p>라이언</p>
+        </a>
+        <a href="products_muzi.html" class="character-item">
+          <img src="images_category/무지.jpg" alt="무지" />
+          <p>무지</p>
+        </a>
+        <a href="products_jay-G.html" class="character-item">
+          <img src="images_category/제이지.jpg" alt="제이지" />
+          <p>제이지</p>
+        </a>
+        <a href="products_choonsik.html" class="character-item">
+          <img src="images_category/춘식이.jpg" alt="춘식이" />
+          <p>춘식이</p>
+        </a>
+        <a href="products_apeach.html" class="character-item">
+          <img src="images_category/어피치.jpg" alt="어피치" />
+          <p>어피치</p>
+        </a>
+        <a href="products_tube.html" class="character-item">
+          <img src="images_category/튜브.jpg" alt="튜브" />
+          <p>튜브</p>
+        </a>
+        <a href="products_frodo.html" class="character-item">
+          <img src="images_category/프로도.jpg" alt="프로도" />
+          <p>프로도</p>
+        </a>
+        <a href="products_con.html" class="character-item">
+          <img src="images_category/콘.jpg" alt="콘" />
+          <p>콘</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- 자사 단독 상품 섹션
+    <div class="our-products">
+    <h2>카카오프렌즈에서만 볼 수 있는 단독 상품!</h2>
+    <div class="slider-container">
+        <button class="slide-btn our-prev">&lt;</button>
+        <div class="slider">
+            <div class="our-slides">
+                <div class="slide">
+                    <img src="images_kakao products/1.메론빵 거북이 세탁망_라이언.jpeg" alt="자사 단독 상품 1">
+                    <h3>오직 여기서만!</h3>
+                    <p>라이언 메론빵 거북이 세탁망</p>
+                </div>
+
+                <div class="slide">
+                    <img src="images_kakao products/2.인형 볼펜 어피치.jpeg" alt="자사 단독 상품 2">
+                    <h3>특별한 구성</h3>
+                    <p>어피치 인형 볼펜</p>
+                </div>
+
+                <div class="slide">
+                    <img src="images_kakao products/3.배 볼록 바디 필로우_무지.jpeg" alt="자사 단독 상품 3">
+                    <h3>소장가치 100%</h3>
+                    <p>무지 배 볼록 바디 필로우</p>
+                </div>
+
+                <div class="slide">
+                    <img src="images_kakao products/4.오늘부터갓생 미니피규어 환경_튜브.jpeg" alt="자사 단독 상품 3">
+                    <h3>소장가치 100%</h3>
+                    <p>튜브 오늘부터갓생 미니피규어 환경</p>
+                </div>
+
+                <div class="slide">
+                    <img src="images_kakao products/5.수면바지 리틀베이비 필로우_제이지.jpeg" alt="자사 단독 상품 3">
+                    <h3>소장가치 100%</h3>
+                    <p>제이지 수면바지 리틀베이비 필로우</p>
+                </div>
+
+                <div class="slide">
+                    <img src="images_kakao products/6.베이비드리밍 볼 발그레 포슬인형_콘.jpeg" alt="자사 단독 상품 3">
+                    <h3>소장가치 100%</h3>
+                    <p>콘 베이비드리밍 볼 발그레 포슬인형</p>
+                </div>
+
+            </div>
+        </div>
+        <button class="slide-btn our-next">&gt;</button>
+    </div>
+</div> -->
+
+    <footer>
+      <div class="footer-content">
+        <div class="company-info">
+          <h3>(주)카카오</h3>
+          <p>주소: 제주특별자치도 제주시 첨단로 242</p>
+          <p>사업자등록번호: 120-81-47521</p>
+          <p>통신판매업신고번호: 제2015-제주아라-0032호</p>
+          <p>대표이사: 정신아</p>
+        </div>
+        <div class="customer-service">
+          <h3>고객센터</h3>
+          <p>1544-5664 (통화료 발생)</p>
+          <p>평일 09:00 - 18:00 (점심시간 12:00~13:00)</p>
+          <p>토/일, 공휴일 휴무</p>
+          <p>카카오톡: @카카오프렌즈</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© Kakao Corp. All rights reserved.</p>
+        <p>
+          (주)카카오에서 판매하는 상품 중에는 개별판매자가 판매하는 상품이
+          포함되어 있습니다.
+        </p>
+        <p>
+          개별판매자가 판매하는 상품에 대해 (주)카카오는 통신중개판매업자로서
+          통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한
+          의무와 책임은 각 판매자에게 있습니다.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
